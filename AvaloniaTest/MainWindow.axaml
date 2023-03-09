@@ -23,15 +23,12 @@
 	</Window.Styles>
 
 	<Grid RowDefinitions="auto,auto,*">
-		<!--меню калькулятора-->
 		<Menu Grid.Row="0">
 			<MenuItem Header="File">
 				<MenuItem Header="Exit" Command="{Binding Exit}"/>
 			</MenuItem>
 		</Menu>
-		<!--Импровизированный экран нашего калькулятора-->
 		<TextBlock Grid.Row="1" Text="{Binding ShownValue}" TextAlignment="Right" FontSize="30" Margin="5" />
-		<!--Клавиши выглядят как сетка(Grid)-->
 		<Grid Grid.Row="2" RowDefinitions="*,*,*,*" ColumnDefinitions="*,*,*,*,*">
 			<Button Grid.Row="0" Grid.Column="0" Command="{Binding AddNumberCommand}">
 				<Button.CommandParameter>
