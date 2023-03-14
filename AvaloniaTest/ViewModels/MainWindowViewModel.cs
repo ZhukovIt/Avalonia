@@ -5,7 +5,7 @@ using ReactiveUI;
 
 namespace AvaloniaTest.ViewModels
 {
-    public sealed class MainWindowViewModel : ReactiveObject
+    public sealed class MainWindowViewModel : ViewModelBase
     {
         private double m_firstValue;
         private double m_secondValue;
